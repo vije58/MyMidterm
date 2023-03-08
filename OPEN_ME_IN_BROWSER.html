@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+<style type="text/css">
+.btn-circle.btn-size {
+	width: 57px;
+	height: 57px;
+	padding: 6px 0px;
+	border-radius: 32px;
+	font-size: 30px;
+	text-align: center;
+	vertical-align: bottom;
+	}
+p	{
+	width: 210px;
+	font-size: 14px;
+	text-align: center;
+	}
+.hint	{
+	border: 1px outset black;
+	padding: 4px;
+	background-color: white;
+	text-align: center;
+	}
+</style>
+</head>
+<body>
+<div class="container-fluid" style="background-image: url('Background.png'); background-repeat: no-repeat; height: 100vh">
+
+
+
+	<p id="p1" style="position: absolute; left: 55px; top: 145px;">Tasks will appear one by one. Upper right corner of each bubble has a hint, use it if you get stuck. After completing a task – tick the box in the bottom of a bubble, it will allow you to move to the next task.</p>
+
+	<p id="p2" style="position: absolute; left: 370px; top: 175px; display: none;">Go to the <a href="https://github.com/abettername/MyMidterm.git">https://github.com/abettername/MyMidterm.git</a> and clone (or fork) the repository “MyMidterm”.</p>
+
+	<p id="p3" style="position: absolute; left: 700px; top: 155px; display: none;">Open Terminal, move to MyMidterm directory and create a .txt file “MyName”. Type in it your First and Last name. Make sure it is saved in your MyMidterm folder.</p>
+
+	<p id="p4" style="position: absolute; left: 1027px; top: 170px; display: none;">In your Browser open the html file named “DesignMe.html” from “MyMidterm”, then through the offered action access your MyName.txt file.</p>
+
+	<p id="p5" style="position: absolute; left: 55px; top: 495px; display: none;">In any text editor or VS Edit “DesignMe.html” to make your name style a better fit to your personality. Save it. Open it in a Browser to check the results. Make a screenshot and save your restyled name in “MyMidterm” folder as MyName in portable network graphics format.</p>
+
+	<p id="p6" style="position: absolute; left: 370px; top: 495px; display: none;">Open “MyCertificate.fig” in Figma, insert “MyName.png” into the file and make changes to the design to ensure that your name is the focal point of the layout, correct the esthetic mistakes in the formatting. Export it as “MyExamCertificate” in pdf format to your “MyMidterm”.</p>
+
+	<p id="p7" style="position: absolute; left: 697px; top: 505px; display: none;">Create a separate minimalistic version of your certificate for mobile devices: Open “MobileCertificate.html” in any text editor or VS, finish and debug the code.  Name it “MyMidtemExam.html” and push it into your github repository.</p>
+
+	<p id="p8" style="position: absolute; left: 1026px; top: 560px; display: none;">Congrats! You have passed the Midterm Exam!</p>
+
+
+	<div id="div1" class="hint" style="position: absolute; left: 275px; top: 97px; width: 250px; display: none">Tick the box in the bottom right corner of this bubble to move to the task #2.</div>
+
+	<div id="div2" class="hint" style="position: absolute; left: 590px; top: 97px; width: 250px; display: none">Please follow the steps at this page very closely: <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo">https://docs.github.com/en/get-started/quickstart/fork-a-repo</a>. If you do not have git installed, download the repository from GitHub.
+</div>
+
+	<div id="div3" class="hint" style="position: absolute; left: 915px; top: 97px; width: 450px; 	text-align: left; display: none">Remember commands for Terminal from Chapter 1:
+	<pre>pwd - displays the full path of your current folder
+ls - lists all the files in your current directory
+cd - change directory: cd .. - goes up one level,
+cd <Folder_name> goes to the Folder_Name inside the directory
+you are in
+touch <Name.txt> creates a new file called “Name.txt”
+echo “your text”>Name.txt - writes “your text”
+into Name.txt file</pre>
+	</div>
+
+	
+	<div id="div4" class="hint" style="position: absolute; left: 1245px; top: 97px; width: 250px; display: none">In any internet Browser go to the top toolbar File>Open file. Press the appeared button and browse to open the file MyName.txt from your MyMidterm folder. Don’t worry If you don’t like our editing – it’s meant to be esthetically challenging </div>
+
+	<div id="div5" class="hint" style="position: absolute; left: 275px; top: 449px; width: 250px; display: none">Open “DesignMe.html” in VS or Text Edit or Notepad and fix the font and its color to your liking. You can check the results intermittently by re-opening the file in a browser after saving the changes. Screenshot for windows: snipping tool (to search for it, press windows key and type the name of the app), hotkeys for Mac: command+shift+3.</div>
+
+	<div id="div6" class="hint" style="position: absolute; left: 590px; top: 449px; width: 250px; display: none">To open a new file in Figma press “Import file” in the upper right corner menu. If you can’t find this button, try main Figma button in the upper left corner(the one with the weird symbol)>Back to files. To import a .png file press “rectangle”>placeimage/video. While exporting make sure you have all the necessary layers selected!</div>
+
+	<div id="div7" class="hint" style="position: absolute; left: 915px; top: 449px; width: 250px; display: none">Make sure all of your files are within the local MyMidterm repository. Once you have verified this, enter your command line and add the files using “git add --all”, then commit to your local repository using “git commit -m “YOUR_MESSAGE_HERE”, then push using “git push”.</div>
+
+	<div id="div8" class="hint" style="position: absolute; left: 1245px; top: 449px; width: 250px; display: none">you are amazing!</div>
+
+
+
+<button type="button" id="button1" class="btn btn-outline-info btn-circle btn-size" onclick="if(div1.style.display === 'none') {div1.style.display='inline';} else {div1.style.display='none';}" style="position: absolute; left: 210px; top: 87px;">?</button>
+
+<button type="button" id="button2" class="btn btn-outline-info btn-circle btn-size" onclick="if(div2.style.display === 'none') {div2.style.display='inline';} else {div2.style.display='none';}" style="position: absolute; left: 525px; top: 87px; display: none;">?</button>
+
+<button type="button" id="button3" class="btn btn-outline-info btn-circle btn-size" onclick="if(div3.style.display === 'none') {div3.style.display='inline';} else {div3.style.display='none';}" style="position: absolute; left: 850px; top: 87px; display: none;">?</button>
+
+<button type="button" id="button4" class="btn btn-outline-info btn-circle btn-size" onclick="if(div4.style.display === 'none') {div4.style.display='inline';} else {div4.style.display='none';}" style="position: absolute; left: 1180px; top: 87px; display: none;">?</button>
+
+<button type="button" id="button5" class="btn btn-outline-info btn-circle btn-size" onclick="if(div5.style.display === 'none') {div5.style.display='inline';} else {div5.style.display='none';}" style="position: absolute; left: 210px; top: 439px; display: none;">?</button>
+
+<button type="button" id="button6" class="btn btn-outline-info btn-circle btn-size" onclick="if(div6.style.display === 'none') {div6.style.display='inline';} else {div6.style.display='none';}" style="position: absolute; left: 525px; top: 439px; display: none;">?</button>
+
+<button type="button" id="button7" class="btn btn-outline-info btn-circle btn-size" onclick="if(div7.style.display === 'none') {div7.style.display='inline';} else {div7.style.display='none';}" style="position: absolute; left: 850px; top: 439px; display: none;">?</button>
+
+<button type="button" id="button8" class="btn btn-outline-info btn-circle btn-size" onclick="if(div8.style.display === 'none') {div8.style.display='inline';} else {div8.style.display='none';}" style="position: absolute; left: 1180px; top: 439px; display: none;">?</button>
+
+
+
+<button type="button" id="done1" class="btn btn-outline-success btn-circle btn-size" onclick="p2.style.display='inline'; done2.style.display='inline'; button2.style.display='inline'; done1.innerHTML='✓'" value="my value" style="position: absolute; left: 260px; top: 260px;"></button>
+
+<button type="button" id="done2" class="btn btn-outline-success btn-circle btn-size" onclick="p3.style.display='inline'; done3.style.display='inline'; button3.style.display='inline'; done2.innerHTML='✓'" value="my value" style="position: absolute; left: 575px; top: 260px; display: none;"></button>
+
+<button type="button" id="done3" class="btn btn-outline-success btn-circle btn-size" onclick="p4.style.display='inline'; done4.style.display='inline'; button4.style.display='inline'; done3.innerHTML='✓'" value="my value" style="position: absolute; left: 900px; top: 260px; display: none;"></button>
+
+<button type="button" id="done4" class="btn btn-outline-success btn-circle btn-size" onclick="p5.style.display='inline'; done5.style.display='inline'; button5.style.display='inline'; done4.innerHTML='✓'" value="my value" style="position: absolute; left: 1230px; top: 260px; display: none;"></button>
+
+<button type="button" id="done5" class="btn btn-outline-success btn-circle btn-size" onclick="p6.style.display='inline'; done6.style.display='inline'; button6.style.display='inline'; done5.innerHTML='✓'" value="my value" style="position: absolute; left: 250px; top: 615px; display: none;"></button>
+
+<button type="button" id="done6" class="btn btn-outline-success btn-circle btn-size" onclick="p7.style.display='inline'; done7.style.display='inline'; button7.style.display='inline'; done6.innerHTML='✓'" value="my value" style="position: absolute; left: 565px; top: 615px; display: none;"></button>
+
+<button type="button" id="done7" class="btn btn-outline-success btn-circle btn-size" onclick="p8.style.display='inline'; button8.style.display='inline'; done7.innerHTML='✓'" value="my value" style="position: absolute; left: 890px; top: 615px; display: none;"></button>
+
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
